@@ -19,7 +19,7 @@
       <div class="page-header" >
       <div class="row">
         {% if user.is_authenticated %}
-          <div class="col-xs-36">
+          <div class="col-xs-1">
           <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
           </div>
         {% endif %}
@@ -29,7 +29,7 @@
 
       <div class="content container">
           <div class="row">
-              <div class="col-md-8 col-xs-36">
+              <div class="col-md-8">
               {% block content %}
               {% endblock %}
               </div>
